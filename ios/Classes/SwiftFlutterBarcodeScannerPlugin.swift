@@ -216,7 +216,7 @@ class BarcodeScannerViewController: UIViewController {
     /// Create and return cancel button
     public lazy var cancelButton: UIButton! = {
         let view = UIButton()
-        button.setImage(UIImage(named: "back", in: Bundle(for: SwiftFlutterBarcodeScannerPlugin.self), compatibleWith: nil),for: .normal)
+        view.setImage(UIImage(named: "back", in: Bundle(for: SwiftFlutterBarcodeScannerPlugin.self), compatibleWith: nil),for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.addTarget(self, action: #selector(BarcodeScannerViewController.cancelButtonClicked), for: .touchUpInside)
         return view
