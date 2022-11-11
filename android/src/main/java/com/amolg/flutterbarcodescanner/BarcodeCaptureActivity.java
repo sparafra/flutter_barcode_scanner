@@ -117,8 +117,8 @@ public final class BarcodeCaptureActivity extends AppCompatActivity implements B
             Log.e("BCActivity:onCreate()", "onCreate: " + e.getLocalizedMessage());
         }
 
-        Button btnBarcodeCaptureCancel = findViewById(R.id.btnBarcodeCaptureCancel);
-        btnBarcodeCaptureCancel.setText(buttonText);
+        ImageView btnBarcodeCaptureCancel = findViewById(R.id.btnBarcodeCaptureCancel);
+        //btnBarcodeCaptureCancel.setText(buttonText);
         btnBarcodeCaptureCancel.setOnClickListener(this);
 
         imgViewBarcodeCaptureUseFlash = findViewById(R.id.imgViewBarcodeCaptureUseFlash);
