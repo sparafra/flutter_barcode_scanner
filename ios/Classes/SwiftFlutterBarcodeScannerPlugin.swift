@@ -204,7 +204,8 @@ class BarcodeScannerViewController: UIViewController {
     /// Create and return switch camera button
     private lazy var switchCameraButton : UIButton! = {
         let button = UIButton()
-        
+        button.setTitle("Switch",for:.normal)
+
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(named: "ic_switch_camera", in: Bundle(for: SwiftFlutterBarcodeScannerPlugin.self), compatibleWith: nil),for: .normal)
         button.addTarget(self, action: #selector(BarcodeScannerViewController.switchCameraButtonClicked), for: .touchUpInside)
@@ -216,8 +217,9 @@ class BarcodeScannerViewController: UIViewController {
     /// Create and return cancel button
     public lazy var cancelButton: UIButton! = {
         let view = UIButton()
-        view.setImage(UIImage(named: "back", in: Bundle(for: SwiftFlutterBarcodeScannerPlugin.self), compatibleWith: nil),for: .normal)
+        view.setTitle("Cancel",for:.normal)
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.setImage(UIImage(named: "back", in: Bundle(for: SwiftFlutterBarcodeScannerPlugin.self), compatibleWith: nil),for: .normal)
         view.addTarget(self, action: #selector(BarcodeScannerViewController.cancelButtonClicked), for: .touchUpInside)
         return view
     }()
@@ -374,13 +376,13 @@ class BarcodeScannerViewController: UIViewController {
         flashIcon.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         flashIcon.widthAnchor.constraint(equalToConstant: 40.0).isActive = true
         
-        cancelButton.translatesAutoresizingMaskIntoConstraints = false
+        //cancelButton.translatesAutoresizingMaskIntoConstraints = false
         cancelButton.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
         cancelButton.heightAnchor.constraint(equalToConstant: 70.0).isActive = true
         cancelButton.bottomAnchor.constraint(equalTo:view.bottomAnchor,constant: 0).isActive=true
         cancelButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:10).isActive = true
         
-        switchCameraButton.translatesAutoresizingMaskIntoConstraints = false
+        //switchCameraButton.translatesAutoresizingMaskIntoConstraints = false
         // A little bit to the right.
         switchCameraButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
         switchCameraButton.heightAnchor.constraint(equalToConstant: 70.0).isActive = true
