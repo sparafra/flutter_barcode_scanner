@@ -369,17 +369,17 @@ class BarcodeScannerViewController: UIViewController {
         bottomView.heightAnchor.constraint(equalToConstant:self.isOrientationPortrait ? 100.0 : 70.0).isActive=true
         
         flashIcon.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        flashIcon.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
+        flashIcon.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
         flashIcon.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         flashIcon.widthAnchor.constraint(equalToConstant: 40.0).isActive = true
 
-        cancelButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        cancelButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
+        cancelButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: -20).isActive = true
+        cancelButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
         cancelButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         cancelButton.widthAnchor.constraint(equalToConstant: 40.0).isActive = true
 
-        switchCameraButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        switchCameraButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
+        switchCameraButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        switchCameraButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
         switchCameraButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         switchCameraButton.widthAnchor.constraint(equalToConstant: 40.0).isActive = true
         /*
