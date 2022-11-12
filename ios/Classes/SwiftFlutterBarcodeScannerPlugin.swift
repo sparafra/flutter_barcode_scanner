@@ -373,17 +373,17 @@ class BarcodeScannerViewController: UIViewController {
         flashIcon.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         flashIcon.widthAnchor.constraint(equalToConstant: 40.0).isActive = true
 
-        cancelButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        cancelButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         cancelButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        cancelButton.heightAnchor.constraint(equalToConstant: 70.0).isActive = true
-        cancelButton.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        cancelButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
+        cancelButton.widthAnchor.constraint(equalToConstant: 40.0).isActive = true
 
         /*
         cancelButton.translatesAutoresizingMaskIntoConstraints = true
         cancelButton.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
         cancelButton.heightAnchor.constraint(equalToConstant: 70.0).isActive = true
         cancelButton.bottomAnchor.constraint(equalTo:view.bottomAnchor,constant: 0).isActive=true
-        //cancelButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:10).isActive = true
+        cancelButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:10).isActive = true
 
         switchCameraButton.translatesAutoresizingMaskIntoConstraints = true
         // A little bit to the right.
